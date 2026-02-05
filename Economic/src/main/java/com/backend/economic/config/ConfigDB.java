@@ -21,9 +21,10 @@ public class ConfigDB{
         
         try
         {
-             Connection connection = DriverManager.getConnection(URL, USER, PASSWD); 
-             System.out.println("Conexion establecida");
-               return connection;
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWD); 
+            System.out.println("Conexion establecida con exito.");
+            return connection;
+
         } catch (SQLException e)
         {
             e.printStackTrace();
